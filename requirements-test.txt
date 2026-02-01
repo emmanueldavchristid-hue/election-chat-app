@@ -1,0 +1,33 @@
+# ================================================================
+# DÉPENDANCES POUR LES TESTS
+# ================================================================
+# Installation: pip install -r requirements-test.txt
+
+# Core testing
+pytest>=7.4.0
+pytest-cov>=4.1.0          # Couverture de code
+pytest-html>=3.2.0         # Rapports HTML
+pytest-json-report>=1.5.0  # Rapports JSON pour CI/CD
+pytest-timeout>=2.1.0      # Timeouts pour tests longs
+pytest-xdist>=3.3.1        # Tests en parallèle
+pytest-mock>=3.11.1        # Mocking
+
+# Assertions améliorées
+pytest-clarity>=1.0.1      # Messages d'erreur plus clairs
+
+# Watch mode (développement)
+pytest-watch>=4.2.0
+
+# Data testing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Great Expectations (data quality)
+great-expectations>=0.17.0  # Optional mais recommandé
+
+# Test data generation
+faker>=19.0.0              # Pour générer des données de test
+
+
+# Pre-commit hooks
+pre-commit>=3.4.0

@@ -1,0 +1,14 @@
+{
+  "resolved_entity": {
+    "entity_type": "circonscriptions",
+    "selected": {
+      "circonscription_num": "126",
+      "circonscription_name": "DIVO, COMMUNE",
+      "region_normalise": "LOH-DJIBOUA",
+      "text": "DIVO, COMMUNE",
+      "score": 0.7,
+      "method": "difflib"
+    },
+    "original_query": "Commune"
+  }
+}
