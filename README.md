@@ -33,7 +33,7 @@ Ce système combine:
 ### Prérequis
 
 - Python 3.10+
-- Ollama (pour LLM local) OU Claude API key OU OpenAI API key (recommandé)
+- Claude API key OU OpenAI API key (recommandé) OU Ollama (pour LLM local)
 
 ### Installation
 
@@ -58,6 +58,29 @@ cp .env.example .env
 ollama pull llama3.1:8b
 # ou pour meilleure qualité:
 ollama pull qwen2.5:14b
+```
+
+## 🔬 Pipeline Ingestion
+
+### ⚠️ Important : À exécuter UNE SEULE FOIS au setup initial
+
+```bash
+# 1. Télécharger le PDF officiel
+python scripts/download_pdf.py
+
+# 2. Explorer le PDF officiel
+python scripts/explore_pdf.py
+
+# 3. Pipeline complet (15-20 min)
+python -m src.ingestion.hybrid_extractor      # Extraction
+python -m src.ingestion.final_corrections     # Corrections auto
+python -m src.ingestion.manual_fixes          # Ajustements manuels
+python -m src.ingestion.db_loader             # Création base DuckDB
+
+# 4. Vérifier
+ls data/processed/elections.duckdb  # Doit exister
+ls data/processed/elections.csv     # Doit exister
+ls data/processed/elections.parquet # Doit exister
 ```
 
 ### Lancement
@@ -223,29 +246,6 @@ election-chat-app/
 - ✅ Monitoring tokens LLM
 
 ---
-
-## 🔬 Pipeline Ingestion
-
-### ⚠️ Important : À exécuter UNE SEULE FOIS au setup initial
-
-```bash
-# 1. Télécharger le PDF officiel
-python scripts/download_pdf.py
-
-# 2. Explorer le PDF officiel
-python scripts/explore_pdf.py
-
-# 3. Pipeline complet (15-20 min)
-python -m src.ingestion.hybrid_extractor      # Extraction
-python -m src.ingestion.final_corrections     # Corrections auto
-python -m src.ingestion.manual_fixes          # Ajustements manuels
-python -m src.ingestion.db_loader             # Création base DuckDB
-
-# 4. Vérifier
-ls data/processed/elections.duckdb  # Doit exister
-ls data/processed/elections.csv     # Doit exister
-ls data/processed/elections.parquet # Doit exister
-```
 
 ### Schéma Base de Données
 
