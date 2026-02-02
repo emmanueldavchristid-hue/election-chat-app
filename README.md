@@ -2,6 +2,17 @@
 
 Application de chat intelligente pour analyser les résultats des élections législatives 2025 de Côte d'Ivoire.
 
+## 🎬 Vidéo Démo
+
+**[▶️ Voir la démonstration complète (9 min)](https://youtu.be/uQenEi9OIaQ)**
+
+La vidéo présente :
+- ✅ Level 1 : SQL Agent (agrégations, rankings, charts)
+- ✅ Level 2 : Hybrid Router (normalisation, typos, citations)
+- ✅ Level 3 : Agentic (disambiguation, clarification)
+- ✅ Level 4 : Observability (tests, traces, monitoring)
+- ✅ Bonus : Détection de fraude électorale
+
 ---
 
 ## 📊 Résumé du Système
