@@ -2,39 +2,39 @@
 # ELECTION CHAT APP - REQUIREMENTS
 # ================================================================
 # Installation: pip install -r requirements.txt
-# Python Version: 3.9+
+# Python Version: 3.10+
 
 # ================================================================
 # CORE DEPENDENCIES
 # ================================================================
 
-pip install sentence-transformers
-
 # PDF Processing
-pdfplumber==0.11.4          # Extract tables from PDF
-tabula-py==2.9.3            # Alternative PDF table extraction
-PyPDF2==3.0.1               # PDF manipulation
+pdfplumber==0.11.4
+tabula-py==2.9.3
+PyPDF2==3.0.1
+camelot-py
+opencv-python-headless
 
 # Data Processing
-pandas==2.2.3               # Data manipulation
-openpyxl==3.1.5            # Excel file support
-numpy>=1.24.0              # Numerical operations
+pandas==2.2.3
+openpyxl==3.1.5
+numpy>=1.24.0
 
 # Database
-duckdb==1.1.3              # Fast analytical database
+duckdb==1.1.3
 
 # ================================================================
 # AI & LLM
 # ================================================================
 
 # LLM APIs
-anthropic==0.40.0          # Claude API
-ollama>=0.1.0              # Local LLM support
+anthropic==0.40.0
+ollama>=0.1.0
 openai
 
 # Embeddings & Vector Search
-chromadb>=0.4.0            # Vector database for RAG
-sentence-transformers>=2.2.0  # Embeddings models
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
 
 # ================================================================
 # WEB APPLICATIONS
@@ -50,83 +50,38 @@ gradio>=4.0.0
 # VISUALIZATION
 # ================================================================
 
-plotly==5.24.1             # Interactive charts
-matplotlib==3.9.3          # Static plots
-seaborn>=0.12.0            # Statistical visualizations
+plotly==5.24.1
+matplotlib==3.9.3
+seaborn>=0.12.0
 
 # ================================================================
 # UTILITIES
 # ================================================================
 
 # Configuration & Environment
-python-dotenv==1.0.1       # Environment variables
-pydantic==2.10.4          # Data validation
+python-dotenv==1.0.1
+pydantic==2.10.4
 
 # HTTP & Requests
-requests==2.32.3          # HTTP library
+requests==2.32.3
 
 # String & Text Processing
-difflib                    # Fuzzy string matching (built-in)
-fuzzywuzzy>=0.18.0        # Advanced fuzzy matching
-python-Levenshtein>=0.21.0  # Fast string distance
-
-# UUID & Unique IDs
-uuid                       # Unique identifiers (built-in)
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.21.0
 
 # Regex
-regex>=2023.0.0           # Advanced regex support
-
-# ================================================================
-# TESTING
-# ================================================================
-
-pytest-asyncio==0.24.0    # Async testing
-
-# ================================================================
-# CODE QUALITY (OPTIONAL - Development)
-# ================================================================
-
-# black>=23.0.0            # Code formatting
-# flake8>=6.1.0            # Linting
-# mypy>=1.5.0              # Type checking
-# pylint>=2.17.0           # Static analysis
+regex>=2023.0.0
 
 # ================================================================
 # MONITORING & OBSERVABILITY (OPTIONAL)
 # ================================================================
-
 # loguru>=0.7.0            # Better logging
 # prometheus-client>=0.17.0  # Metrics
 
-
 # ================================================================
-# AUTRES
+# CODE QUALITY (OPTIONAL - Development)
 # ================================================================
-
-pip install camelot-py[cv]
-
-# Si erreur, essayez:
-pip install camelot-py opencv-python-headless
-
-# ================================================================
-# NOTES
-# ================================================================
-# 1. Install basic requirements:
-#    pip install -r requirements.txt
-#
-# 2. For development, also install:
-#    pip install -r requirements-test.txt
-#
-# 3. For Ollama support:
-#    - Install Ollama: https://ollama.ai
-#    - Pull models: ollama pull llama3.1
-#
-# 4. For ChromaDB vector search:
-#    - Automatic on pip install chromadb
-#    - Downloads embeddings model on first use (~80MB)
-
-
-
-
-
-
+# black>=23.0.0            # Code formatting
+# flake8>=6.1.0            # Linting
+# mypy>=1.5.0              # Type checking
+# pylint>=2.17.0           # Static analysis
