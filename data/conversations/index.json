@@ -1,11 +1,18 @@
 {
   "conversations": [
     {
-      "id": "5c326f87-0ff6-4b7b-a1c2-af56a37b3548",
-      "title": "Qui a gagné à Yopougon ?",
-      "created_at": "2026-02-01T18:53:12.661816",
-      "updated_at": "2026-02-01T20:09:23.224839",
-      "message_count": 32
+      "id": "b8cdcf90-6b52-4907-af93-0e74801bbdc1",
+      "title": "Qui a gagné à yop ?",
+      "created_at": "2026-02-02T12:42:11.496293",
+      "updated_at": "2026-02-02T12:54:39.970361",
+      "message_count": 18
+    },
+    {
+      "id": "4d4c1ea6-aa49-4505-8e7b-a0479a434233",
+      "title": "salut ",
+      "created_at": "2026-02-02T12:42:07.595362",
+      "updated_at": "2026-02-02T12:48:21.058430",
+      "message_count": 12
     }
   ]
 }
