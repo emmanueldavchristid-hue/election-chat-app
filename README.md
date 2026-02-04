@@ -2,6 +2,8 @@
 
 Application de chat intelligente pour analyser les résultats des élections législatives 2025 de Côte d'Ivoire.
 
+**📦 Repository GitHub:** [https://github.com/emmanueldavchristid-hue/election-chat-app](https://github.com/emmanueldavchristid-hue/election-chat-app)
+
 ## 🎬 Vidéo Démo
 
 **[▶️ Voir la démonstration complète (9 min)](https://youtu.be/uQenEi9OIaQ)**
